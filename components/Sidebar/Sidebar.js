@@ -6,6 +6,7 @@ import {
   GlobeAltIcon,
   HomeIcon,
   InboxIcon,
+  ViewfinderCircleIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import SidebarOptions from "./SidebarOptions/SidebarOptions";
@@ -35,6 +36,8 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
       setSelected(6);
     } else if (router.pathname === "/settings") {
       setSelected(7);
+    } else if (router.pathname === "/keyFinder") {
+      setSelected(8);
     }
   }, [router.pathname]);
 
@@ -65,6 +68,14 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
         index={2}
         handleClick={handleClick}
         route="/report"
+      />
+      <SidebarOptions
+        Icon={ViewfinderCircleIcon}
+        text="Keyword Finder"
+        selected={selected === 8}
+        index={8}
+        handleClick={handleClick}
+        route="/keyFinder"
       />
       <SidebarOptions
         Icon={InboxIcon}
