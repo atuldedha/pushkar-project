@@ -1604,7 +1604,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.8.1:
+prop-types@^15.5.8, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1628,6 +1628,11 @@ quick-lru@^5.1.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+react-country-region-selector@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/react-country-region-selector/-/react-country-region-selector-3.6.1.tgz#07010051bfff0fbf92e32d1e6952b8cb20932013"
+  integrity sha512-/hKRVFVxhsQKV6/csajd9uX4Lz6XHMVNtpKhMn/xGQtZDZrnsr+VeeeeXDooSn5cV0DFAk2eKk9c+otj7Hop9w==
+
 react-dom@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
@@ -1640,6 +1645,13 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-languages-select@^1.0.20:
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/react-languages-select/-/react-languages-select-1.0.20.tgz#a3697afab5fab140049f0c58caf966e306ef527b"
+  integrity sha512-JsnfSL1jCfGnC9VV5TvZ+R4rLCrA93u/0aybodHMbOQjPuRrUQhMOhFB/SiF+7LEZl+IIhF3sU0dEu4/9giFgA==
+  dependencies:
+    prop-types "^15.5.8"
 
 react@18.2.0:
   version "18.2.0"

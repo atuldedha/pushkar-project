@@ -18,6 +18,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
 
   const handleClick = (index, route) => {
     setSelected(index);
+    setShowSidebar(false);
     router.push(route);
   };
 
