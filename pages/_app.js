@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const [showSidebar, setShowSidebar] = useState(true);
   return (
     <div className="flex w-full">
-      <Sidebar showSidebar={showSidebar} />
+      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className="flex flex-col w-full">
         <Header setShowSidebar={setShowSidebar} />
         <Component {...pageProps} />

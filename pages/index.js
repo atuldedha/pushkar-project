@@ -15,7 +15,7 @@ export default function Home() {
 
         <div className="border-b-[1px] border-b-gray-300 w-full my-6" />
 
-        <div className="flex items-center justify-between space-x-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between space-x-0 space-y-4 md:space-y-0 md:space-x-4">
           <div className="basis-1/2">
             <HomeCard
               text="Reports"
