@@ -6,7 +6,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   const [showSidebar, setShowSidebar] = useState(true);
   return (
-    <div className="flex w-full">
+    <div className="flex w-full bg-bgColor h-screen">
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className="flex flex-col w-full">
         <Header setShowSidebar={setShowSidebar} />

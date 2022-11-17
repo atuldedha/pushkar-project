@@ -47,7 +47,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
       } z-10 bg-white absolute top-0 left-0 overflow-y-scroll transition-all duration-200 ease-in-out flex flex-col items-start border-l-[1px] border-l-gray-500 shadow-md`}
     >
       <XMarkIcon
-        className="h-8 w-8 text-end text-gray-400 mb-8"
+        className="h-8 w-8 text-end text-gray-400 mb-8 hover:cursor-pointer hover:scale-105 hover:text-gray-600"
         onClick={() => setShowSidebar(false)}
       />
       <SidebarOptions
