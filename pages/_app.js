@@ -1,7 +1,18 @@
-import '../styles/globals.css'
+import { useState } from "react";
+import Header from "../components/Header/Header";
+import Sidebar from "../components/Sidebar/Sidebar";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const [showSidebar, setShowSidebar] = useState(true);
+  return (
+    <div className="flex w-full">
+      <Sidebar showSidebar={showSidebar} />
+      <div className="flex flex-col w-full">
+        <Header setShowSidebar={setShowSidebar} />
+        <Component {...pageProps} />
+      </div>
+    </div>
+  );
 }
-
-export default MyApp
+export default MyApp;
