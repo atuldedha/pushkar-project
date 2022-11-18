@@ -25,19 +25,19 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
   useEffect(() => {
     if (router.pathname === "/") {
       setSelected(1);
-    } else if (router.pathname === "/report") {
-      setSelected(2);
-    } else if (router.pathname === "/reportImport") {
-      setSelected(3);
-    } else if (router.pathname === "/list") {
-      setSelected(4);
-    } else if (router.pathname === "/billing") {
-      setSelected(5);
-    } else if (router.pathname === "/yourWebsites") {
-      setSelected(6);
-    } else if (router.pathname === "/settings") {
-      setSelected(7);
     } else if (router.pathname === "/keyFinder") {
+      setSelected(2);
+    } else if (router.pathname === "/report") {
+      setSelected(3);
+    } else if (router.pathname === "/importKeywords") {
+      setSelected(4);
+    } else if (router.pathname === "/list") {
+      setSelected(5);
+    } else if (router.pathname === "/billing") {
+      setSelected(6);
+    } else if (router.pathname === "/yourWebsites") {
+      setSelected(7);
+    } else if (router.pathname === "/settings") {
       setSelected(8);
     }
   }, [router.pathname]);
@@ -63,34 +63,34 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
         route="/"
       />
       <SidebarOptions
-        Icon={ClipboardIcon}
-        text="Keyword Report"
-        selected={selected === 2}
-        index={2}
-        handleClick={handleClick}
-        route="/report"
-      />
-      <SidebarOptions
         Icon={ViewfinderCircleIcon}
         text="Keyword Finder"
-        selected={selected === 8}
-        index={8}
+        selected={selected === 2}
+        index={2}
         handleClick={handleClick}
         route="/keyFinder"
       />
       <SidebarOptions
-        Icon={InboxIcon}
-        text="Keyword Import"
+        Icon={ClipboardIcon}
+        text="Keyword Report"
         selected={selected === 3}
         index={3}
         handleClick={handleClick}
-        route="/reportImport"
+        route="/report"
+      />
+      <SidebarOptions
+        Icon={InboxIcon}
+        text="Keyword Import"
+        selected={selected === 4}
+        index={4}
+        handleClick={handleClick}
+        route="/importKeywords"
       />
       <SidebarOptions
         Icon={BookmarkIcon}
         text="List"
-        selected={selected === 4}
-        index={4}
+        selected={selected === 5}
+        index={5}
         handleClick={handleClick}
         route="/list"
       />
@@ -98,24 +98,24 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
       <SidebarOptions
         Icon={CreditCardIcon}
         text="Billings"
-        selected={selected === 5}
-        index={5}
+        selected={selected === 6}
+        index={6}
         handleClick={handleClick}
         route="/billing"
       />
       <SidebarOptions
         Icon={GlobeAltIcon}
         text="Your website"
-        selected={selected === 6}
-        index={6}
+        selected={selected === 7}
+        index={7}
         handleClick={handleClick}
         route="/yourWebsite"
       />
       <SidebarOptions
         Icon={CreditCardIcon}
         text="Settings"
-        selected={selected === 7}
-        index={7}
+        selected={selected === 8}
+        index={8}
         handleClick={handleClick}
         route="/settings"
       />
