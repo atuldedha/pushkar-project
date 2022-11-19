@@ -3,8 +3,8 @@ import CreditsCard from "./CreditsCard/CreditsCard";
 
 const Credits = () => {
   return (
-    <div className="flex flex-col ">
-      <div className="flex items-center space-x-6 mt-10">
+    <div className="flex flex-col">
+      <div className="flex flex-col w-full lg:flex-row scrollbar-hide md:items-center lg:justify-between space-y-3 space-x-0 lg:space-y-0 lg:space-x-6 mt-10 overflow-scroll">
         <CreditsCard amount="$25" numberOfCredits="2000" value="$0.0125" />
         <CreditsCard amount="$25" numberOfCredits="2000" value="$0.0125" />
         <CreditsCard amount="$25" numberOfCredits="2000" value="$0.0125" />
@@ -18,13 +18,13 @@ const Credits = () => {
           </span>
         </div>
         <div className="flex items-center bg-[#f8fbfd] px-4 py-4">
-          <span className="text-[#9baecb] w-[20%] font-sans font-normal text-sm">
+          <span className="text-[#9baecb] w-[25%] md:w-[20%] font-sans font-normal text-sm">
             Date
           </span>
-          <span className="text-[#9baecb] w-[20%] font-sans font-normal text-sm">
+          <span className="text-[#9baecb] w-[28%] md:w-[20%] font-sans font-normal text-sm">
             Credits
           </span>
-          <span className="text-[#9baecb] w-[20%] font-sans font-normal text-sm">
+          <span className="text-[#9baecb] w-[25%] md:w-[20%] font-sans font-normal text-sm">
             Amount
           </span>
         </div>

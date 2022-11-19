@@ -9,7 +9,7 @@ const Subscriptions = () => {
         <span className="text-bold text-xl leading-6 tracking-wide font-sans font-bold">
           Choose a Subscription
         </span>
-        <div className="grid grid-cols-2 gap-4 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
           <SubscriptionCard
             title="Standard ($29.9/month)"
             subText="3000 credits/month"
@@ -35,24 +35,24 @@ const Subscriptions = () => {
             Your subscription
           </span>
         </div>
-        <div className="flex items-center bg-[#f8fbfd] px-4 py-4 border border-gray-200">
-          <span className="text-[#9baecb] w-[20%] uppercase font-sans font-normal text-xs">
+        <div className="flex items-center space-x-6 bg-[#f8fbfd] px-4 py-4 border border-gray-200 overflow-scroll w-full">
+          <span className="text-[#9baecb] md:w-[20%] uppercase whitespace-nowrap font-sans font-normal text-xs">
             Start Date
           </span>
 
-          <span className="text-[#9baecb] w-[15%] uppercase font-sans font-normal text-xs">
+          <span className="text-[#9baecb] md:w-[15%] uppercase whitespace-nowrap font-sans font-normal text-xs">
             Plan
           </span>
 
-          <span className="text-[#9baecb] w-[15%] uppercase font-sans font-normal text-xs">
+          <span className="text-[#9baecb] md:w-[15%] uppercase whitespace-nowrap font-sans font-normal text-xs">
             Credits
           </span>
 
-          <span className="text-[#9baecb] w-[20%] uppercase font-sans font-normal text-xs">
+          <span className="text-[#9baecb] md:w-[20%] uppercase whitespace-nowrap font-sans font-normal text-xs">
             Next Payment
           </span>
 
-          <span className="text-[#9baecb] w-[20%] uppercase font-sans font-normal text-xs">
+          <span className="text-[#9baecb] md:w-[20%] uppercase whitespace-nowrap font-sans font-normal text-xs">
             Status
           </span>
         </div>
@@ -64,17 +64,17 @@ const Subscriptions = () => {
             Periods
           </span>
         </div>
-        <div className="flex items-center bg-[#f8fbfd] px-20 py-4 border border-gray-200">
-          <span className="text-[#9baecb] w-[20%] uppercase font-sans font-normal text-sm">
+        <div className="flex items-center space-x-6 overflow-scroll bg-[#f8fbfd] px-10 md:px-20 py-4 border border-gray-200">
+          <span className="text-[#9baecb] md:w-[20%] uppercase whitespace-nowrap font-sans font-normal text-sm">
             Date{" "}
             <QuestionMarkCircleIcon className="h-3 w-3 mr-2 mb-3 inline-block" />
           </span>
 
-          <span className="text-[#9baecb] w-[50%] uppercase font-sans font-normal text-sm">
+          <span className="text-[#9baecb] md:w-[50%] uppercase whitespace-nowrap font-sans font-normal text-sm">
             Monthly credits
           </span>
 
-          <span className="text-[#9baecb] w-[20%] uppercase font-sans font-normal text-sm">
+          <span className="text-[#9baecb] md:w-[20%] uppercase whitespace-nowrap font-sans font-normal text-sm">
             order date
           </span>
         </div>

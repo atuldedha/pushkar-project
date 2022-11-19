@@ -11,7 +11,7 @@ const Tabs = () => {
   };
   return (
     <div className="flex flex-col w-full">
-      <div className="flex items-center space-x-6 mt-10">
+      <div className="flex items-center space-x-4 md:space-x-6 mt-10">
         <div className="relative flex flex-col">
           <span
             className={`${

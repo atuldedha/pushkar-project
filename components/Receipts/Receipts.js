@@ -7,7 +7,7 @@ const Receipts = () => {
         <span className="text-base font-semibold font-sans text-black">
           Receipts
         </span>
-        <span className="text-[#9baecb] font-sans font-normal text-sm">
+        <span className="text-[#9baecb] font-sans font-normal text-sm ml-4 md:ml-0">
           To add company details to your invoice, click on download and add the
           information.
         </span>
