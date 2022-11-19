@@ -9,7 +9,7 @@ const CountryLanguageSelection = ({
 }) => {
   return (
     <div className="mb-8 mt-12 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-5">
-      <div className="md:basis-1/2">
+      <div className="md:basis-1/2 w-full">
         <span className="text-black font-medium font-sans text-base">
           Country
         </span>

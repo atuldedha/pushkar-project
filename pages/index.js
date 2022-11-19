@@ -8,7 +8,7 @@ export default function Home() {
         <title>Pushkar Project</title>
       </Head>
 
-      <div className="flex flex-col py-4 px-8">
+      <div className="flex flex-col md:ml-[300px] py-4 px-8">
         <span className="text-4xl tracking-wide mt-4 text-gray-700 font-sans font-bold">
           Your Dashboard
         </span>
