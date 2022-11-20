@@ -6,8 +6,8 @@ import {
 
 const YourWebsites = () => {
   return (
-    <div className="flex flex-col items-center mt-4 md:mt-20 h-full ml-4 mr-4 md-mr-0 md:ml-20">
-      <div className="w-full md:w-[60%] flex flex-col">
+    <div className="flex flex-col mt-4 md:mt-20 h-full ml-4 mr-4 md-mr-0 md:ml-20">
+      <div className="w-full md:ml-[250px] lg:ml-[300px] xl:mx-[300px] md:w-[60%] flex flex-col">
         <div className="flex items-center justify-between">
           <span className="text-black text-xl md:text-3xl font-bold font-sans">
             {`0 website(s)`}

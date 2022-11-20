@@ -11,9 +11,17 @@ import {
 } from "@heroicons/react/24/outline";
 import SidebarOptions from "./SidebarOptions/SidebarOptions";
 import { useRouter } from "next/router";
+import { useWindowSize } from "../../utils/WindowResizeHook";
 
 const Sidebar = ({ showSidebar, setShowSidebar }) => {
   const [selected, setSelected] = useState(1);
+  const [width, height] = useWindowSize();
+
+  useEffect(() => {
+    if (width < parseFloat(700)) {
+      setShowSidebar(false);
+    }
+  }, [width]);
   const router = useRouter();
 
   const handleClick = (index, route) => {
