@@ -8,14 +8,14 @@ export default function Home() {
         <title>Pushkar Project</title>
       </Head>
 
-      <div className="flex flex-col md:ml-[300px] py-4 px-8">
+      <div className="flex flex-col lg:ml-[300px] py-4 px-8">
         <span className="text-4xl tracking-wide mt-4 text-gray-700 font-sans font-bold">
           Your Dashboard
         </span>
 
         <div className="border-b-[1px] border-b-gray-300 w-full my-6" />
 
-        <div className="flex flex-col md:flex-row md:items-center justify-between space-x-0 space-y-4 md:space-y-0 md:space-x-4">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
           <div className="basis-1/2">
             <HomeCard
               text="Reports"
