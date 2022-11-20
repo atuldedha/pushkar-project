@@ -18,7 +18,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
   const [width, height] = useWindowSize();
 
   useEffect(() => {
-    if (width < parseFloat(700)) {
+    if (width && width < parseFloat(700)) {
       setShowSidebar(false);
     }
   }, [width]);
