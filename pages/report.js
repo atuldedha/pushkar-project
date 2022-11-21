@@ -11,7 +11,7 @@ const Report = () => {
           Choose an option
         </span>
 
-        <div className="flex flex-col md:items-center md:flex-row space-y-4 space-x-0 md:space-y-0 md:space-x-6">
+        <div className="flex flex-col md:items-center md:flex-row space-y-4 space-x-0 md:space-y-0 md:space-x-6 px-4">
           <button className="py-2 px-6 bg-blue1 text-white text-base font-sans font-medium rounded-md hover:bg-blue-600">
             Get keyword ideas
           </button>

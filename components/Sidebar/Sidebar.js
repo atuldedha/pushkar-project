@@ -18,8 +18,10 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
   const [width, height] = useWindowSize();
 
   useEffect(() => {
-    if (width && width < parseFloat(700)) {
+    if (width && width < parseFloat(750)) {
       setShowSidebar(false);
+    } else if (width && width > parseFloat(750)) {
+      setShowSidebar(true);
     }
   }, [width]);
   const router = useRouter();
