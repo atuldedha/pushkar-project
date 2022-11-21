@@ -28,6 +28,9 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
 
   const handleClick = (index, route) => {
     setSelected(index);
+    if (width < parseFloat(750)) {
+      setShowSidebar(false);
+    }
     router.push(route);
   };
 
