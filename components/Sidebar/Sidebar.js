@@ -54,7 +54,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
       className={`${
         !showSidebar
           ? "opacity-0 -translate-x-[500px] w-0 p-0"
-          : "opacity-100 translate-x-[1px] w-60 md:w-72 h-screen mt-px md:mt-0 p-5 md:p-10"
+          : "opacity-100 translate-x-[1px] w-48 md:w-56 h-screen mt-px md:mt-0 p-5 md:p-6 "
       } z-10 bg-white absolute top-0 left-0 overflow-y-scroll transition-all duration-200 ease-in-out flex flex-col items-start border-l-[1px] border-l-gray-500 shadow-md`}
     >
       <XMarkIcon
