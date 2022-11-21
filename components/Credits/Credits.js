@@ -4,7 +4,7 @@ import CreditsCard from "./CreditsCard/CreditsCard";
 const Credits = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col w-full lg:flex-row scrollbar-hide md:items-center lg:justify-between space-y-3 space-x-0 lg:space-y-0 lg:space-x-6 mt-10 overflow-scroll">
+      <div className="flex flex-col w-full xl:flex-row scrollbar-hide xl:items-center xl:justify-between space-y-3 space-x-0 xl:space-y-0 xl:space-x-2 mt-10">
         <CreditsCard amount="$25" numberOfCredits="2000" value="$0.0125" />
         <CreditsCard amount="$25" numberOfCredits="2000" value="$0.0125" />
         <CreditsCard amount="$25" numberOfCredits="2000" value="$0.0125" />

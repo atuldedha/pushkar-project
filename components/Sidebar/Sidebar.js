@@ -63,6 +63,11 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
         className="h-8 w-8 text-end text-gray-400 mb-8 hover:cursor-pointer hover:scale-105 hover:text-gray-600"
         onClick={() => setShowSidebar(false)}
       />
+      {width > parseFloat(750) && (
+        <span className="text-base w-full text-center font-sans font-medium text-gray-700 mb-10 mt-10">
+          Pushkar <span className="text-green-400">Project</span>
+        </span>
+      )}
       <SidebarOptions
         Icon={HomeIcon}
         text="Dashboard"
