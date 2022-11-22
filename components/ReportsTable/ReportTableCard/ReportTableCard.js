@@ -6,8 +6,8 @@ const ReportTableCard = ({ data, setSearchData }) => {
     setSearchData((prev) => prev?.filter((item) => item.id !== data.id));
   };
   return (
-    <div className="flex items-center border-b border-b-gray-400 py-4 px-4 space-x-4 w-[900px] xl:w-[1200px]">
-      <div className="flex flex-col w-[250px] xl:w-[300px]">
+    <div className="flex items-center border-b border-b-gray-400 py-4 px-4 space-x-4 w-[700px] xl:w-[900px]">
+      <div className="flex flex-col w-[200px] xl:w-[250px]">
         <span className="text-base font-normal font-sans text-blue1">
           {data.name}
         </span>

@@ -5,7 +5,7 @@ import ReportsTable from "../components/ReportsTable/ReportsTable";
 const Report = () => {
   return (
     <div className="flex flex-col mt-4 md:mt-20 h-full ml-4 mr-4 md-mr-0 md:ml-20">
-      <div className="w-full md:ml-[250px] lg:ml-[200px] xl:mr-[100px] md:w-[80%] flex flex-col">
+      <div className="w-full md:ml-[250px] lg:ml-[300px] xl:mr-[200px] md:w-[70%] flex flex-col">
         <span className="font-bold font-sans text-2xl text-black mb-10">
           Keyword Reports
         </span>
@@ -31,7 +31,7 @@ const Report = () => {
         </div>
 
         <div className="w-full overflow-scroll scrollbar-hide">
-          <ReportsTable />
+          <ReportsTable type="bse" />
         </div>
       </div>
     </div>
